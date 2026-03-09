@@ -1,19 +1,794 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Portfolio - Anas Kadar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Portfolio | Anas Kadar</title>
+  <meta name="description" content="E-portfolio d'Anas Kadar, étudiant en BUT Informatique à l'IUT Lyon 1 et alternant chez Unleash Lab." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Anas Kadar</h1>
-  <p>Développeur Web</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#presentation" aria-label="Accueil portfolio">
+        <span class="brand-mark">AK</span>
+        <span class="brand-text">
+          <strong>Anas Kadar</strong>
+          <small>E-Portfolio</small>
+        </span>
+      </a>
 
-  <h2>Projets</h2>
-  <ul>
-    <li>Projet 1</li>
-    <li>Projet 2</li>
-  </ul>
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+      <label class="nav-trigger" for="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-  <h2>Contact</h2>
-  <p>Email : anaskadar01@email.com</p>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="presentation" class="section hero">
+      <div class="container">
+        <div class="hero-layout">
+          <article class="hero-card">
+            <p class="section-chip">Profil</p>
+            <h1>Anas Kadar</h1>
+            <p class="hero-subtitle">Étudiant en BUT Informatique • Alternant • Développement web</p>
+            <p class="hero-text">
+              Je m'appelle Anas Kadar et je suis actuellement étudiant en troisième année de BUT Informatique à l’IUT Lyon 1.
+              Je m’intéresse particulièrement au développement web et aux systèmes d’information, avec un intérêt pour la conception d’outils numériques et l’analyse des données.
+              Dans le cadre de ma formation, je développe des compétences en développement d’applications, gestion de bases de données et conception de solutions informatiques.
+              Je réalise actuellement une alternance chez Unleash Lab en tant que développeur web, où je participe au développement et à l’amélioration d’outils numériques.
+              À terme, je souhaite évoluer vers des métiers liés à l’analyse des systèmes d’information et à la gestion de projets technologiques.
+            </p>
+          </article>
+
+          <aside class="hero-side" aria-label="Informations clés">
+            <h2>Informations clés</h2>
+            <ul class="key-list">
+              <li>
+                <span>Formation</span>
+                <p>BUT Informatique - IUT Lyon 1</p>
+              </li>
+              <li>
+                <span>Statut</span>
+                <p>Alternant</p>
+              </li>
+              <li>
+                <span>Entreprise</span>
+                <p>Unleash Lab</p>
+              </li>
+              <li>
+                <span>Domaine</span>
+                <p>Développement web / Systèmes d’information</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="formation" class="section">
+      <div class="container panel">
+        <header class="section-head">
+          <p class="section-kicker">Formation</p>
+          <h2>Parcours académique</h2>
+          <p>Vue claire de ma formation en informatique, de la base technologique au niveau universitaire actuel.</p>
+        </header>
+
+        <div class="timeline-grid">
+          <article class="timeline-item education">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div>
+              <h3>BUT Informatique - IUT Lyon 1 - Université Claude Bernard</h3>
+              <p class="timeline-meta">Formation universitaire • En cours</p>
+              <p>Approfondissement en développement d'applications, bases de données, architecture logicielle et gestion de projet informatique.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item education">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div>
+              <h3>Bac STI2D option SIN</h3>
+              <p class="timeline-meta">Formation technologique • Obtenu</p>
+              <p>Première spécialisation dans les systèmes d'information et du numérique.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" class="section">
+      <div class="container panel">
+        <header class="section-head">
+          <p class="section-kicker">Parcours</p>
+          <h2>Expériences professionnelles et complémentaires</h2>
+          <p>Timeline de mon évolution professionnelle, des premières immersions en entreprise à l'alternance en développement web full stack.</p>
+        </header>
+
+        <div class="career-timeline">
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2025-09">Septembre 2025 - Août 2026</time>
+              <span class="career-badge alternance">Alternance</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>Unleash Lab</h3>
+              <p class="career-role">Développeur web full stack</p>
+              <p class="career-meta">Genève, Suisse</p>
+              <p>Participation au développement et à l'amélioration d'outils numériques dans le cadre de mon alternance.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2024-12">Décembre 2024 - Juin 2025</time>
+              <span class="career-badge cdd">CDD</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>393 Services</h3>
+              <p class="career-role">Développeur web back end</p>
+              <p class="career-meta">Cergy, France</p>
+              <p>Développement web back end avec Node.js, PostgreSQL, SQL, OCR et GitHub.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2024-07">Juillet 2024 - Septembre 2024</time>
+              <span class="career-badge student-job">Job étudiant</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>Keolis Grand Bourg</h3>
+              <p class="career-role">Agent polyvalent</p>
+              <p class="career-meta">Bourg-en-Bresse</p>
+              <p>Expérience en environnement professionnel avec missions polyvalentes, sens de l'organisation et adaptation.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2024-03">Mars 2024 - Juin 2024</time>
+              <span class="career-badge stage">Stage</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>Ministère de la Justice</h3>
+              <p class="career-role">Développeur web full stack</p>
+              <p class="career-meta">Arras</p>
+              <p>Participation au développement web full stack avec utilisation de technologies comme Laravel, SQL, OCR et GitHub.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2023-07">Juillet 2023 - Avril 2025</time>
+              <span class="career-badge student-job">Job étudiant</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>McDonald's - Avenue de l'Europe</h3>
+              <p class="career-role">Agent polyvalent</p>
+              <p class="career-meta">Bourg-en-Bresse</p>
+              <p>Expérience professionnelle en parallèle des études, avec gestion des tâches opérationnelles, sens du rythme, rigueur et travail en équipe.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2022-07">Juillet 2022 - Aujourd'hui</time>
+              <span class="career-badge independent">Activité indépendante</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>Micro-entrepreneur</h3>
+              <p class="career-role">Achat / revente de véhicules d'occasion</p>
+              <p>Achat et revente de véhicules d'occasion dans le cadre d'une activité indépendante.</p>
+            </div>
+          </article>
+
+          <article class="career-item">
+            <div class="career-date">
+              <time datetime="2019-04">Avril 2019</time>
+              <span class="career-badge stage">Stage</span>
+            </div>
+            <span class="career-marker" aria-hidden="true"></span>
+            <div class="career-card">
+              <h3>Dr Info</h3>
+              <p class="career-role">Stage - Services informatiques</p>
+              <p class="career-meta">Bourg-en-Bresse</p>
+              <p>Découverte du fonctionnement d'une entreprise de services informatiques et immersion dans un environnement technique lié à la maintenance et aux services numériques.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="section">
+      <div class="container panel">
+        <header class="section-head">
+          <p class="section-kicker">Projets</p>
+          <h2>Projets</h2>
+          <p>Projets universitaires et professionnels réalisés durant mon BUT Informatique.</p>
+        </header>
+
+        <div class="projects-carousel-wrap">
+          <button class="carousel-btn prev" type="button" aria-label="Projet précédent">‹</button>
+
+          <div class="projects-carousel" id="projects-carousel">
+            <article class="project-slide">
+              <div class="project-media" role="img" aria-label="Emplacement image du projet Estivales de Brou">
+                Image du projet
+              </div>
+              <div class="project-body">
+                <h3>Estivales de Brou</h3>
+                <p>Projet universitaire - amélioration d'une application web pour un festival culturel.</p>
+                <div class="chips">
+                  <span class="chip">Next.js</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Tailwind CSS</span>
+                </div>
+                <button type="button" class="btn open-project-modal" data-project="estivales">Voir le projet</button>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <div class="project-media" role="img" aria-label="Emplacement image du projet Restos du Cœur">
+                Image du projet
+              </div>
+              <div class="project-body">
+                <h3>Restos du Cœur - gestion du parc informatique</h3>
+                <p>Projet universitaire centré sur l'organisation et le suivi du parc informatique.</p>
+                <div class="chips">
+                  <span class="chip">Web</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Gestion SI</span>
+                </div>
+                <button type="button" class="btn open-project-modal" data-project="restos">Voir le projet</button>
+              </div>
+            </article>
+
+            <article class="project-slide">
+              <div class="project-media" role="img" aria-label="Emplacement image du projet Order Eat">
+                Image du projet
+              </div>
+              <div class="project-body">
+                <h3>Order Eat</h3>
+                <p>Projet universitaire orienté expérience utilisateur et logique de commande.</p>
+                <div class="chips">
+                  <span class="chip">React</span>
+                  <span class="chip">Node.js</span>
+                  <span class="chip">Firebase</span>
+                </div>
+                <button type="button" class="btn open-project-modal" data-project="ordereat">Voir le projet</button>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-btn next" type="button" aria-label="Projet suivant">›</button>
+        </div>
+
+        <div class="carousel-dots" aria-hidden="true">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="section">
+      <div class="container panel">
+        <header class="section-head">
+          <p class="section-kicker">Compétences</p>
+          <h2>Compétences techniques par catégories</h2>
+          <p>Section conçue pour visualiser rapidement tes acquis et faire le lien avec les projets présentés.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Développement web</h3>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Langages</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">C</span>
+              <span class="chip">C++</span>
+              <span class="chip">Bash</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Bases de données</h3>
+            <div class="chips">
+              <span class="chip">SQL</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Neo4j</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Outils / environnement</h3>
+            <div class="chips">
+              <span class="chip">GitHub</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Android Studio</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Proxmox</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Autres compétences techniques</h3>
+            <div class="chips">
+              <span class="chip">Conception d'applications</span>
+              <span class="chip">Modélisation de données</span>
+              <span class="chip">Architecture SI</span>
+              <span class="chip">Gestion de projet</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container panel">
+        <header class="section-head">
+          <p class="section-kicker">Contact</p>
+          <h2>Me contacter</h2>
+          <p>Canaux professionnels pour échanger sur une opportunité, un projet ou une collaboration.</p>
+        </header>
+
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:anaskadar01@gmail.com">anaskadar01@gmail.com</a></p>
+          </article>
+          <article class="contact-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/anaskad01" target="_blank" rel="noreferrer">github.com/anaskad01</a></p>
+          </article>
+          <article class="contact-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/anas-kadar-975ab9204" target="_blank" rel="noreferrer">linkedin.com/in/anas-kadar-975ab9204</a></p>
+          </article>
+          <article class="contact-card">
+            <h3>Localisation</h3>
+            <p>Lyon / Bourg-en-Bresse, France</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anas Kadar - E-portfolio BUT Informatique</p>
+      <a href="#presentation" class="footer-link">Retour en haut</a>
+    </div>
+  </footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="project-modal__backdrop" data-close-modal></div>
+    <section class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button type="button" class="project-modal__close" aria-label="Fermer" data-close-modal>×</button>
+      <header class="project-modal__head">
+        <p class="section-kicker">Détail Projet</p>
+        <h2 id="project-modal-title">Projet</h2>
+      </header>
+      <div class="project-modal__body" id="project-modal-body"></div>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      const wrap = document.querySelector(".projects-carousel-wrap");
+      const track = document.getElementById("projects-carousel");
+      if (!wrap || !track) return;
+
+      const prev = wrap.querySelector(".carousel-btn.prev");
+      const next = wrap.querySelector(".carousel-btn.next");
+      const dots = document.querySelectorAll(".carousel-dots .dot");
+
+      const getStep = () => {
+        const first = track.querySelector(".project-slide");
+        if (!first) return 320;
+        const style = window.getComputedStyle(track);
+        const gap = parseFloat(style.columnGap || style.gap || "0");
+        return first.getBoundingClientRect().width + gap;
+      };
+
+      const updateDots = () => {
+        const step = getStep();
+        const index = Math.round(track.scrollLeft / step);
+        dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+      };
+
+      prev?.addEventListener("click", () => {
+        track.scrollBy({ left: -getStep(), behavior: "smooth" });
+      });
+
+      next?.addEventListener("click", () => {
+        track.scrollBy({ left: getStep(), behavior: "smooth" });
+      });
+
+      track.addEventListener("scroll", updateDots, { passive: true });
+      window.addEventListener("resize", updateDots);
+      updateDots();
+
+      const modal = document.getElementById("project-modal");
+      const modalTitle = document.getElementById("project-modal-title");
+      const modalBody = document.getElementById("project-modal-body");
+      const openButtons = document.querySelectorAll(".open-project-modal");
+      const closeButtons = modal?.querySelectorAll("[data-close-modal]");
+
+      const projectDetails = {
+        estivales: {
+          title: "Estivales de Brou",
+          html: `
+            <div class="project-detail-grid">
+              <article class="detail-card">
+                <h3>Contexte</h3>
+                <p>Le projet consiste à améliorer l'application web du festival "Estivales de Brou", un événement culturel mettant en valeur des spectacles lyriques et des artistes professionnels.</p>
+                <ul class="detail-list">
+                  <li>améliorer l'application existante</li>
+                  <li>moderniser l'architecture</li>
+                  <li>ajouter des fonctionnalités pour les utilisateurs et administrateurs</li>
+                </ul>
+              </article>
+              <article class="detail-card">
+                <h3>Technologies utilisées</h3>
+                <div class="chips">
+                  <span class="chip">Next.js</span>
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Tailwind CSS</span>
+                  <span class="chip">MySQL</span>
+                  <span class="chip">Docker</span>
+                </div>
+              </article>
+            </div>
+            <article class="detail-card">
+              <h3>Mes contributions</h3>
+              <ul class="detail-list">
+                <li>Développement d'un système de gestion des utilisateurs pour les administrateurs</li>
+                <li>Implémentation d'un espace dédié aux choristes avec accès sécurisé</li>
+                <li>Développement d'une fonctionnalité permettant aux choristes de modifier leurs informations et mot de passe</li>
+                <li>Mise en place d'un système de gestion des dates multiples pour les événements</li>
+                <li>Mise à jour du framework Next.js et des dépendances du projet</li>
+                <li>Participation à l'analyse de l'existant et à l'amélioration de l'architecture</li>
+              </ul>
+            </article>
+            <article class="detail-card">
+              <h3>Fonctionnalités développées</h3>
+              <div class="features-grid">
+                <article class="feature-card">
+                  <h4>Gestion des utilisateurs</h4>
+                  <p>Création d'un tableau de bord permettant aux administrateurs de visualiser et gérer tous les comptes utilisateurs.</p>
+                </article>
+                <article class="feature-card">
+                  <h4>Espace choristes</h4>
+                  <p>Ajout d'un espace dédié aux choristes avec accès à leurs informations et possibilité de modification du profil.</p>
+                </article>
+                <article class="feature-card">
+                  <h4>Gestion avancée des événements</h4>
+                  <p>Implémentation d'un système permettant d'associer plusieurs dates à un même événement.</p>
+                </article>
+                <article class="feature-card">
+                  <h4>Mise à jour technique</h4>
+                  <p>Modernisation du projet avec la mise à jour du framework Next.js et des dépendances.</p>
+                </article>
+              </div>
+            </article>
+            <article class="detail-card">
+              <h3>Améliorations techniques</h3>
+              <ul class="detail-list">
+                <li>amélioration de l'architecture backend</li>
+                <li>mise à jour des dépendances</li>
+                <li>amélioration de la sécurité</li>
+                <li>préparation du projet pour de futures évolutions</li>
+              </ul>
+            </article>
+          `
+        },
+        restos: {
+          title: "Restos du Cœur - Gestion du parc informatique",
+          html: `
+            <div class="project-detail-grid">
+              <article class="detail-card">
+                <h3>Contexte</h3>
+                <p>Ce projet consiste à développer une application web permettant de gérer le parc informatique des Restos du Cœur de l'Ain.</p>
+                <p>Avant ce projet, la gestion du matériel informatique était réalisée à l'aide d'un fichier Excel contenant des macros VBA partagé sur un NAS. Cette solution présentait plusieurs limites : manque de traçabilité, erreurs dans l'association des équipements, accès peu sécurisé et difficulté de gestion à long terme.</p>
+                <p>L'objectif du projet était de remplacer ce système par une application web centralisée, sécurisée et plus simple à utiliser.</p>
+              </article>
+              <article class="detail-card">
+                <h3>Projet</h3>
+                <p><strong>Type :</strong> Projet universitaire - BUT Informatique</p>
+                <h3 class="detail-subtitle">Technologies</h3>
+                <div class="chips">
+                  <span class="chip">PHP</span>
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">MySQL</span>
+                </div>
+              </article>
+            </div>
+
+            <article class="detail-card">
+              <h3>Objectifs du projet</h3>
+              <ul class="detail-list">
+                <li>centraliser la gestion du parc informatique</li>
+                <li>améliorer la traçabilité des équipements</li>
+                <li>sécuriser l'accès aux données</li>
+                <li>faciliter la gestion des utilisateurs et du matériel</li>
+                <li>fournir un tableau de bord global pour les administrateurs</li>
+              </ul>
+            </article>
+
+            <article class="detail-card">
+              <h3>Architecture</h3>
+              <p>L'application repose sur une architecture web séparant le frontend accessible via le webroot et le backend contenant la logique métier.</p>
+              <p>Le fichier index.php sert de point d'entrée unique pour les utilisateurs et redirige vers un routeur principal qui gère les différentes pages de l'application.</p>
+              <p>Le backend contient les modules de traitement, la configuration et la gestion des sessions afin de sécuriser l'accès aux données.</p>
+            </article>
+
+            <article class="detail-card">
+              <h3>Fonctionnalités</h3>
+              <div class="features-grid">
+                <article class="feature-card">
+                  <h4>Gestion des équipements</h4>
+                  <ul class="detail-list">
+                    <li>ajout d'équipements</li>
+                    <li>modification et suppression</li>
+                    <li>gestion des informations techniques</li>
+                    <li>association avec les sites</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Historique des interventions</h4>
+                  <ul class="detail-list">
+                    <li>suivi des actions réalisées</li>
+                    <li>historique par équipement</li>
+                    <li>date, utilisateur et type d'intervention enregistrés</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Gestion des utilisateurs</h4>
+                  <ul class="detail-list">
+                    <li>création et modification de comptes</li>
+                    <li>rôles différents (utilisateur, technicien, administrateur)</li>
+                    <li>contrôle des accès</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Tableau de bord</h4>
+                  <ul class="detail-list">
+                    <li>vue globale du parc informatique</li>
+                    <li>statistiques et informations importantes</li>
+                    <li>accès rapide aux données principales</li>
+                  </ul>
+                </article>
+              </div>
+            </article>
+
+            <article class="detail-card">
+              <h3>Améliorations UX par rapport à l'ancien système</h3>
+              <ul class="detail-list">
+                <li>remplacement du fichier Excel par une application web</li>
+                <li>interface plus claire et structurée</li>
+                <li>formulaires plus intuitifs</li>
+                <li>utilisation de pop-ups pour ajouter ou modifier les équipements</li>
+                <li>meilleure lisibilité des informations</li>
+                <li>filtrage des équipements par site ou par type</li>
+              </ul>
+            </article>
+
+            <article class="detail-card">
+              <h3>Résultat</h3>
+              <p>Le projet a permis de remplacer un système de gestion basé sur Excel par une application web centralisée et sécurisée.</p>
+              <p>La nouvelle plateforme facilite la gestion quotidienne du matériel informatique des Restos du Cœur et améliore considérablement la traçabilité des équipements et des interventions.</p>
+            </article>
+          `
+        },
+        ordereat: {
+          title: "OrderEat - E-Carte Restaurant",
+          html: `
+            <div class="project-detail-grid">
+              <article class="detail-card">
+                <h3>Contexte</h3>
+                <p>Le projet OrderEat vise à remplacer les cartes papier de restaurants par une solution numérique.</p>
+                <p>Les cartes papier sont coûteuses à modifier et peu flexibles lorsqu'un restaurateur souhaite changer ses menus, ses prix ou l'organisation de sa carte.</p>
+                <p>Pour résoudre ce problème, nous avons développé une plateforme composée de plusieurs applications permettant de gérer et consulter une carte de restaurant de manière entièrement numérique.</p>
+              </article>
+              <article class="detail-card">
+                <h3>Projet</h3>
+                <p><strong>Type :</strong> Projet universitaire - BUT Informatique</p>
+                <h3 class="detail-subtitle">Technologies</h3>
+                <div class="chips">
+                  <span class="chip">PHP</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">SQL</span>
+                  <span class="chip">Android (Java / Kotlin)</span>
+                  <span class="chip">XML</span>
+                  <span class="chip">Jetpack Compose</span>
+                  <span class="chip">Firebase Storage</span>
+                </div>
+              </article>
+            </div>
+
+            <article class="detail-card">
+              <h3>Objectifs du projet</h3>
+              <ul class="detail-list">
+                <li>remplacer les cartes papier par une solution numérique</li>
+                <li>permettre aux restaurateurs de modifier leur carte en temps réel</li>
+                <li>améliorer l'expérience utilisateur pour les clients</li>
+                <li>faciliter la gestion des commandes</li>
+                <li>proposer un système complet reliant restaurateurs, clients et serveurs</li>
+              </ul>
+            </article>
+
+            <article class="detail-card">
+              <h3>Architecture</h3>
+              <div class="features-grid">
+                <article class="feature-card">
+                  <h4>Application mobile client</h4>
+                  <ul class="detail-list">
+                    <li>consulter la carte du restaurant</li>
+                    <li>commander directement depuis leur téléphone</li>
+                    <li>accéder à l'historique des commandes</li>
+                    <li>filtrer les plats selon leurs préférences alimentaires (halal, végétarien, etc.)</li>
+                    <li>accéder au menu via un QR Code présent sur la table</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Application mobile serveur</h4>
+                  <ul class="detail-list">
+                    <li>consulter les commandes en cours</li>
+                    <li>modifier le statut des commandes</li>
+                    <li>gérer les tables dont ils ont la charge</li>
+                    <li>scanner un QR Code pour associer une table à leur zone</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Site web restaurateur</h4>
+                  <ul class="detail-list">
+                    <li>gérer leur menu</li>
+                    <li>modifier les prix et les plats en temps réel</li>
+                    <li>gérer les commandes</li>
+                    <li>consulter des statistiques sur les commandes</li>
+                  </ul>
+                </article>
+              </div>
+            </article>
+
+            <article class="detail-card">
+              <h3>Base de données</h3>
+              <p>La base de données centralise les informations du système :</p>
+              <ul class="detail-list">
+                <li>utilisateurs</li>
+                <li>restaurants</li>
+                <li>cartes électroniques</li>
+                <li>plats, boissons et menus</li>
+                <li>commandes</li>
+              </ul>
+              <p>Chaque restaurant possède une E-Carte contenant les différents plats et menus proposés.</p>
+              <p>Les commandes passées par les utilisateurs sont enregistrées dans la base de données et liées aux éléments de la carte.</p>
+            </article>
+
+            <article class="detail-card">
+              <h3>Fonctionnalités</h3>
+              <div class="features-grid">
+                <article class="feature-card">
+                  <h4>Carte numérique du restaurant</h4>
+                  <ul class="detail-list">
+                    <li>consultation des plats</li>
+                    <li>filtrage par préférences alimentaires</li>
+                    <li>recherche de plats</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Commande mobile</h4>
+                  <ul class="detail-list">
+                    <li>ajout au panier</li>
+                    <li>paiement</li>
+                    <li>choix sur place ou à emporter</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>QR Code</h4>
+                  <ul class="detail-list">
+                    <li>accès rapide au menu du restaurant</li>
+                    <li>identification de la table</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Gestion des commandes</h4>
+                  <ul class="detail-list">
+                    <li>suivi du statut de la commande</li>
+                    <li>historique des commandes</li>
+                  </ul>
+                </article>
+                <article class="feature-card">
+                  <h4>Gestion des menus</h4>
+                  <ul class="detail-list">
+                    <li>modification des plats et des prix</li>
+                    <li>gestion dynamique des cartes</li>
+                  </ul>
+                </article>
+              </div>
+            </article>
+
+            <article class="detail-card">
+              <h3>API</h3>
+              <p>Une API REST a été développée pour permettre la communication entre les applications mobiles et la base de données.</p>
+              <p>Les applications utilisent un système de token afin de sécuriser les accès à l'API.</p>
+              <p>Cette API permet de :</p>
+              <ul class="detail-list">
+                <li>récupérer les données des restaurants</li>
+                <li>enregistrer les commandes</li>
+                <li>synchroniser les informations entre les différentes applications</li>
+              </ul>
+            </article>
+
+            <article class="detail-card">
+              <h3>Résultat</h3>
+              <p>Le projet OrderEat propose une solution complète permettant de gérer une carte de restaurant de manière entièrement numérique.</p>
+              <p>Les restaurateurs peuvent modifier leurs menus en temps réel, les clients peuvent consulter la carte et commander depuis leur smartphone, et les serveurs peuvent suivre les commandes en cours.</p>
+            </article>
+          `
+        }
+      };
+
+      const openModal = (key) => {
+        const data = projectDetails[key];
+        if (!data || !modal || !modalTitle || !modalBody) return;
+        modalTitle.textContent = data.title;
+        modalBody.innerHTML = data.html;
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+      };
+
+      const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+      };
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => openModal(button.dataset.project));
+      });
+      closeButtons?.forEach((button) => button.addEventListener("click", closeModal));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeModal();
+      });
+    })();
+  </script>
 </body>
 </html>
